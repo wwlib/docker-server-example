@@ -4,26 +4,27 @@
   "description": "simple socket server for testing docker",
   "main": "index.js",
   "scripts": {
-    "launch": "env-cmd ts-node ./server.ts",
+    "launch": "ts-node ./server.ts",
+    "launch:local": "env-cmd ts-node ./server.ts",
     "launch:client": "env-cmd ts-node client.ts",
     "test": "export $(cat ./local.env | xargs) && mocha --timeout 10000 -r ts-node/register ./tests/**/*.ts"
   },
   "author": "Andrew Rapo",
   "license": "MIT",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "@types/node": "^14.14.7",
     "env-cmd": "^10.1.0",
     "express": "^4.17.1",
+    "nodemon": "^2.0.15",
     "ts-node": "^9.0.0",
+    "typescript": "4.0.5",
     "ws": "^8.3.0"
   },
   "devDependencies": {
     "@types/chai": "^4.2.14",
     "@types/express": "^4.17.8",
     "@types/mocha": "^8.0.0",
-    "@types/node": "^14.14.7",
     "chai": "^4.2.0",
-    "mocha": "^8.2.1",
-    "typescript": "4.0.5"
+    "mocha": "^8.2.1"
   }
 }

@@ -1,0 +1,9 @@
+.DS_Store
+node_modules
+hide
+
+.ipynb_checkpoints
+.vscode
+lib
+.idea
+.env

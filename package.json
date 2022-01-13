@@ -1,5 +1,5 @@
 {
-  "name": "docker-example",
+  "name": "docker-server-example",
   "version": "0.0.1",
   "description": "simple socket server for testing docker",
   "main": "index.js",

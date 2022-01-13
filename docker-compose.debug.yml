@@ -2,7 +2,7 @@ version: '3.4'
 
 services:
   dockerexample:
-    image: dockerexample
+    image: wwlib/docker-examples:server
     build:
       context: .
       dockerfile: ./Dockerfile
